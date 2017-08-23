@@ -43,9 +43,10 @@
              <div class="row">
                  <div class="form-group">
                  <div class="col-md-12">
-             <asp:Button ID="btn_guardar" runat="server" Text="Guardar"  CssClass="btn btn-info" OnClick="btn_guardar_Click"/>
+             <asp:Button ID="btn_guardar" runat="server" Text="Guardar"  CssClass="btn btn-info" OnClick="guardar"/>
             <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" CssClass="btn btn-danger" OnClick="btn_eliminar_Click" />
             <asp:Button ID="btn_modificar" runat="server" Text="Editar"  CssClass="btn btn-success"/>
+                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
                      </div>
              </div>     
                  </div>    

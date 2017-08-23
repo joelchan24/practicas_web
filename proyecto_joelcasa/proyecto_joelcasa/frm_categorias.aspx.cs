@@ -15,8 +15,21 @@ namespace proyecto_joelcasa
         vuelosDAO vuelo = new vuelosDAO();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
 
+                refrescar();
+
+
+            }
+
+            }
+        public void refrescar()
+        {
+            GridView1.DataSource = vuelo.mostra().Tables[0];
+            GridView1.DataBind();
         }
+
 
         protected void txt_fech_TextChanged(object sender, EventArgs e)
         {
@@ -27,6 +40,7 @@ namespace proyecto_joelcasa
         protected void btn_guardar_Click(object sender, EventArgs e)
         {
             vuelo.guardar(mandar());
+            Response.Write("<script>window.alert('Bien hecho');</script>");
         }
         public categoriaBO mandar()
         {
@@ -43,6 +57,20 @@ namespace proyecto_joelcasa
         protected void btn_eliminar_Click(object sender, EventArgs e)
         {
            
+        }
+
+        protected void guardar(object sender, EventArgs e)
+        {
+           
+                vuelo.guardar(mandar());
+                Response.Write("<script>window.alert('Bien hecho');</script>");
+            
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            vuelo.guardar(mandar());
         }
     }
 }

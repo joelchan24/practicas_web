@@ -36,7 +36,12 @@ namespace DAO
         }
 
 
-
+        public DataSet mostra()
+        {
+            SqlCommand com = new SqlCommand("select * from vuelos");
+            com.CommandType = CommandType.Text;
+            return cone.EjecutarSentencia(com);
+        }
 
 
 
