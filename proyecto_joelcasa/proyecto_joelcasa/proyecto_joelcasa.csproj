@@ -66,7 +66,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="frm_categorias.aspx" />
+    <Content Include="frm_cosas.aspx" />
+    <Content Include="frm_formulario_viaje.aspx" />
+    <Content Include="frm_menu.aspx" />
+    <Content Include="fr_inicio.aspx" />
+    <Content Include="img\11.jpg" />
+    <Content Include="img\13.jpg" />
+    <Content Include="img\amanecer.jpg" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\scripts.js" />
     <Content Include="packages.config" />
+    <Content Include="principal.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,7 +94,62 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_categorias.aspx.cs">
+      <DependentUpon>frm_categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_categorias.aspx.designer.cs">
+      <DependentUpon>frm_categorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cosas.aspx.cs">
+      <DependentUpon>frm_cosas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_cosas.aspx.designer.cs">
+      <DependentUpon>frm_cosas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_formulario_viaje.aspx.cs">
+      <DependentUpon>frm_formulario_viaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_formulario_viaje.aspx.designer.cs">
+      <DependentUpon>frm_formulario_viaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_menu.aspx.cs">
+      <DependentUpon>frm_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_menu.aspx.designer.cs">
+      <DependentUpon>frm_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fr_inicio.aspx.cs">
+      <DependentUpon>fr_inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fr_inicio.aspx.designer.cs">
+      <DependentUpon>fr_inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="principal.Master.cs">
+      <DependentUpon>principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="principal.Master.designer.cs">
+      <DependentUpon>principal.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BO\BO.csproj">
+      <Project>{f8dd425a-2bf1-44d1-9c90-d0022b3dd04e}</Project>
+      <Name>BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{bc82fdfb-815f-4f1d-886c-4bc55b191fe1}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
