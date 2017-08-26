@@ -70,6 +70,7 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="frmss.aspx" />
     <Content Include="frm_categorias.aspx" />
     <Content Include="frm_cosas.aspx" />
     <Content Include="frm_formulario_viaje.aspx" />
@@ -94,6 +95,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmss.aspx.cs">
+      <DependentUpon>frmss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmss.aspx.designer.cs">
+      <DependentUpon>frmss.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frm_categorias.aspx.cs">
       <DependentUpon>frm_categorias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
